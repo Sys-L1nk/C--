@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/AMC/Working/C++"
+		},
+		{
+			"path": "C:/Users/AMC/Working/HTML"
+		},
+		{
+			"path": "C:/Users/AMC/Working/Python"
+		},
+		{
+			"path": "C:/Users/AMC/Working/Java"
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}
