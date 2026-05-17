@@ -2,11 +2,6 @@
 #include <string>
 
 using namespace std;
-
-// ==========================================
-// 1. DATA STRUCTURES
-// ==========================================
-
 struct Patient
 {
     int id;
@@ -21,15 +16,13 @@ struct Patient
 struct Ambulance
 {
     string callSign;
-    int eta; // Estimated Time of Arrival in minutes
+    int eta; // eta = Estimated Time of Arrival in minutes
 
     Ambulance() : callSign(""), eta(0) {}
     Ambulance(string c, int t) : callSign(c), eta(t) {}
 };
 
-// ==========================================
 // 2. PATIENT MAX-HEAP (High Score = Priority)
-// ==========================================
 
 class EmergencyWard
 {
@@ -117,10 +110,10 @@ public:
         }
 
         Patient criticalPatient = heap[0];
-        cout << "🩺 Treating Patient: " << criticalPatient.name
+        cout << " Treating Patient: " << criticalPatient.name
              << " (ID: " << criticalPatient.id << ", Severity: " << criticalPatient.severityScore << ")" << endl;
 
-        // Replace root with the last element and shrink size
+        // Replace root with the last element and reduce size
         heap[0] = heap[size - 1];
         size--;
 
@@ -129,9 +122,7 @@ public:
     }
 };
 
-// ==========================================
 // 3. AMBULANCE MIN-HEAP (Low ETA = Priority)
-// ==========================================
 
 class DispatchSystem
 {
@@ -224,10 +215,7 @@ public:
         bubbleDown(0);
     }
 };
-
-// ==========================================
 // 4. MAIN FUNCTION (System Testing)
-// ==========================================
 
 int main()
 {
