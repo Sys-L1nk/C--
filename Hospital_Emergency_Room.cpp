@@ -217,7 +217,7 @@ public:
 };
 // 4. MAIN FUNCTION (System Testing)
 
-int main()
+int main() 
 {
     cout << "=== CITYCARE HOSPITAL EMERGENCY SYSTEM ===\n"
          << endl;
